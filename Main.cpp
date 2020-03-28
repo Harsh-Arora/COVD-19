@@ -42,13 +42,13 @@ void lettero(int l){
 
 void letterv(int l){
 	int i, j; 
-    for (i = l - 1; i >= 0; i--) {  
-        for (j = l - 1; j > i; j--) { 
+    for (i=l-1; i>=0; i--) {  
+        for (j=l-1; j>i; j--) { 
             cout << " "; 
         } 
         cout <<"*";
  
-        for (j = 1; j < (i * 2); j++) 
+        for (j=1; j<(i * 2); j++) 
             cout << " "; 
   
         if (i >= 1) 
@@ -152,6 +152,7 @@ int main(){
 
 	letterc(l);
     std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+
 
 	lettero(l);
     std::this_thread::sleep_for(std::chrono::milliseconds(1000));
